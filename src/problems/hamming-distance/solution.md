@@ -12,7 +12,6 @@ const hammingDistance = (x, y) => {
   for (distance = 0; val > 0; distance++) {
     val = val & (val - 1);
   }
-  console.log(`Hamming distance is ${distance}`);
   return distance;
 };
 

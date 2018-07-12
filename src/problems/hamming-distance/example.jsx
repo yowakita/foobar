@@ -22,19 +22,10 @@ const getXor = (x, y) => {
   const binaryString = padStart(xor.toString(2), length + 1, 0)
     .split('')
     .join(' ');
-  const replacedString = binaryString.replace(/1/g, '↑').replace(/0/g, ' ');
-  return replacedString;
+  return binaryString.replace(/1/g, '↑').replace(/0/g, ' ');
 };
 
 class Example extends Component {
-  constructor(props) {
-    super(props);
-    this.incrementX = this.incrementX.bind(this);
-    this.incrementY = this.incrementY.bind(this);
-    this.decrementX = this.decrementX.bind(this);
-    this.decrementY = this.decrementY.bind(this);
-  }
-
   state = {
     output: '',
     x: 1,

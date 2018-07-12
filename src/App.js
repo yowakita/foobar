@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MarkdownViewer from 'components/MarkdownViewer';
 import './App.css';
-import problem from 'problems/hamming-distance/index.md';
+import problem from 'problems/hamming-distance/README.md';
 import solution from 'problems/hamming-distance/solution.md';
 import notes from 'problems/hamming-distance/notes.md';
 import Example from 'problems/hamming-distance/example';
